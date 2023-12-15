@@ -1,4 +1,4 @@
-#include "first_app.hpp"
+#include "../app/first_app.hpp"
 
 // std
 #include <cstdlib>
@@ -20,6 +20,23 @@ int main() {
 
 	return EXIT_SUCCESS;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //#define GLFW_INCLUDE_VULKAN
 //#include <GLFW/glfw3.h>
