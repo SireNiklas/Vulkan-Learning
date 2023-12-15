@@ -2,6 +2,7 @@
 
 #include "../src/lve_window.hpp"
 #include "../src/lve_pipeline.hpp"
+#include "../src/lve_device.hpp"
 
 namespace lve{
 	class FirstApp {
@@ -14,6 +15,7 @@ namespace lve{
 		private:
 			// When window is created, is automatically created via its constructor, and same for the destroy.
 			LveWindow lveWindow{WIDTH, HEIGHT, "Hello Vulkan"};
-			LvePipeline lvePipeline{ "shaders/simple_shader.vert.spv", "shaders/simple_shader.frag.spv" };
+			LveDevice lveDevice{lveWindow};
+			LvePipeline lvePipeline{lveDevice, "shaders/simple_shader.vert.spv", "shaders/simple_shader.frag.spv", LvePipeline::defaultPipelineConfigInfo(WIDTH, HEIGHT)};
 	};
 }
