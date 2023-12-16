@@ -20,7 +20,6 @@ namespace lve {
 		VkPipelineLayout pipelineLayout = nullptr;
 		VkRenderPass renderPass = nullptr;
 		uint32_t subpass = 0;
-		VkPipelineInputAssemblyStateCreateInfo inputAssemblyInfo;
 	};
 
 	class LvePipeline {
