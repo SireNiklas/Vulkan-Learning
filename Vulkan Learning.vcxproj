@@ -139,6 +139,7 @@
   <ItemGroup>
     <ClCompile Include="app\first_app.cpp" />
     <ClCompile Include="src\lve_device.cpp" />
+    <ClCompile Include="src\lve_model.cpp" />
     <ClCompile Include="src\lve_pipeline.cpp" />
     <ClCompile Include="src\lve_swap_chain.cpp" />
     <ClCompile Include="src\lve_window.cpp" />
